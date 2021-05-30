@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+
+
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    body{
+      margin: 0;
+      padding: 0;
+      font-family: roboto;
+    }
+    nav{
+      position: fixed;
+      top: 0;
+      left: 0;
+      user-select: none;
+      width: 100%;
+      height: 51px;
+      background-color: #333;
+      color: white;
+      border-bottom: 1px solid #eee;
+      padding: 0 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo{
+      font-size: 2rem;
+      font-weight: 100;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    .logo:hover{
+      color: cyan;
+    }
+    nav > ul{
+      width: 60vw;
+      max-width: 500px;
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      padding: 0;
+    }
+    nav ul li{
+      list-style: none;
+    }
+    nav ul li a{
+      color: white;
+      font-weight: 100;
+      font-size: 1.5rem;
+      margin-left: 0.5rem;
+      text-decoration: none;
+      transition: 0.2s;
+      width: 0;
+    }
+    nav ul li a:hover{
+      color: transparent;
+      text-shadow: 6px 6px 0px #ff0050, -6px -6px 0px #00f2ea;
+
+    }
+
+
+    .ham-menu{
+      width: 40px;
+      height: 35px;
+      border: 2px solid #fff;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: .2s;
+      display: none;
+    }
+    .ham-menu:hover{
+      background-color: #222;
+    }
+    .ham-menu span{
+      font-size: 30px;
+      color: #fff;
+    }
+
+    .center{
+      width: 100%;
+      min-height: calc(100vh - 92px);
+    }
+    
+    footer{
+      width: 100%;
+      height: 41px;
+      background-color: #111;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    footer a{
+      text-decoration: none;
+      color: #00f2ea;
+      transition: .2s;
+    }
+    footer a:hover{
+      color: #ff0050;
+    }
+
+
+    @media screen and (max-width:800px) {
+      .ham-menu{
+        display: flex;
+      }
+      nav > ul{
+        background-color: #444;
+        position: absolute;
+        top: 51px;
+        right: 0px;
+        width: 100%;
+        max-width: 100%;
+        flex-direction: column;
+        display: none;
+      }
+      nav ul li{
+        padding: 0.5rem 2rem;
+      }
+      nav ul li:hover{
+        text-shadow: none;
+        color: #ff0050;
+        background-color: #333;
+      }
+      nav ul li a:hover{
+      text-shadow: 2px 2px 0px #ff0050, -2px -2px 0px #00f2ea;
+        color: #000;
+      }
+      .active{
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <span class="material-icons">
+        developer_mode
+        </span>
+      Codezilla</div>
+    <ul>
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">Bootstrap</a></li>
+      <li><a href="#">JavaScript</a></li>
+      <li><a href="#">ReactJS</a></li>
+    </ul>
+
+    <div class="ham-menu">
+      <span class="material-icons">
+        menu
+        </span>
+    </div>
+  </nav>
+
+<div class="center">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo asperiores, minima quod doloribus reprehenderit autem recusandae in id facilis exercitationem iure consequuntur eos, iusto animi minus quaerat veritatis repellat incidunt dicta. Voluptates deleniti possimus et repudiandae molestias aut atque veniam, sapiente provident? Aliquam expedita unde ducimus officia fugiat ratione odit hic mollitia quidem voluptas sit, ex modi adipisci libero necessitatibus eum? Tempore labore ex quis, omnis perferendis impedit cum iure, ea ullam, eligendi exercitationem odit natus. Iure pariatur voluptatem deleniti officiis similique. A ratione nostrum quae sequi maxime animi repellat debitis exercitationem, nobis facilis nihil ipsam id, temporibus error cupiditate.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo asperiores, minima quod doloribus reprehenderit autem recusandae in id facilis exercitationem iure consequuntur eos, iusto animi minus quaerat veritatis repellat incidunt dicta. Voluptates deleniti possimus et repudiandae molestias aut atque veniam, sapiente provident? Aliquam expedita unde ducimus officia fugiat ratione odit hic mollitia quidem voluptas sit, ex modi adipisci libero necessitatibus eum? Tempore labore ex quis, omnis perferendis impedit cum iure, ea ullam, eligendi exercitationem odit natus. Iure pariatur voluptatem deleniti officiis similique. A ratione nostrum quae sequi maxime animi repellat debitis exercitationem, nobis facilis nihil ipsam id, temporibus error cupiditate.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo asperiores, minima quod doloribus reprehenderit autem recusandae in id facilis exercitationem iure consequuntur eos, iusto animi minus quaerat veritatis repellat incidunt dicta. Voluptates deleniti possimus et repudiandae molestias aut atque veniam, sapiente provident? Aliquam expedita unde ducimus officia fugiat ratione odit hic mollitia quidem voluptas sit, ex modi adipisci libero necessitatibus eum? Tempore labore ex quis, omnis perferendis impedit cum iure, ea ullam, eligendi exercitationem odit natus. Iure pariatur voluptatem deleniti officiis similique. A ratione nostrum quae sequi maxime animi repellat debitis exercitationem, nobis facilis nihil ipsam id, temporibus error cupiditate.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo asperiores, minima quod doloribus reprehenderit autem recusandae in id facilis exercitationem iure consequuntur eos, iusto animi minus quaerat veritatis repellat incidunt dicta. Voluptates deleniti possimus et repudiandae molestias aut atque veniam, sapiente provident? Aliquam expedita unde ducimus officia fugiat ratione odit hic mollitia quidem voluptas sit, ex modi adipisci libero necessitatibus eum? Tempore labore ex quis, omnis perferendis impedit cum iure, ea ullam, eligendi exercitationem odit natus. Iure pariatur voluptatem deleniti officiis similique. A ratione nostrum quae sequi maxime animi repellat debitis exercitationem, nobis facilis nihil ipsam id, temporibus error cupiditate.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo asperiores, minima quod doloribus reprehenderit autem recusandae in id facilis exercitationem iure consequuntur eos, iusto animi minus quaerat veritatis repellat incidunt dicta. Voluptates deleniti possimus et repudiandae molestias aut atque veniam, sapiente provident? Aliquam expedita unde ducimus officia fugiat ratione odit hic mollitia quidem voluptas sit, ex modi adipisci libero necessitatibus eum? Tempore labore ex quis, omnis perferendis impedit cum iure, ea ullam, eligendi exercitationem odit natus. Iure pariatur voluptatem deleniti officiis similique. A ratione nostrum quae sequi maxime animi repellat debitis exercitationem, nobis facilis nihil ipsam id, temporibus error cupiditate.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo asperiores, minima quod doloribus reprehenderit autem recusandae in id facilis exercitationem iure consequuntur eos, iusto animi minus quaerat veritatis repellat incidunt dicta. Voluptates deleniti possimus et repudiandae molestias aut atque veniam, sapiente provident? Aliquam expedita unde ducimus officia fugiat ratione odit hic mollitia quidem voluptas sit, ex modi adipisci libero necessitatibus eum? Tempore labore ex quis, omnis perferendis impedit cum iure, ea ullam, eligendi exercitationem odit natus. Iure pariatur voluptatem deleniti officiis similique. A ratione nostrum quae sequi maxime animi repellat debitis exercitationem, nobis facilis nihil ipsam id, temporibus error cupiditate.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo asperiores, minima quod doloribus reprehenderit autem recusandae in id facilis exercitationem iure consequuntur eos, iusto animi minus quaerat veritatis repellat incidunt dicta. Voluptates deleniti possimus et repudiandae molestias aut atque veniam, sapiente provident? Aliquam expedita unde ducimus officia fugiat ratione odit hic mollitia quidem voluptas sit, ex modi adipisci libero necessitatibus eum? Tempore labore ex quis, omnis perferendis impedit cum iure, ea ullam, eligendi exercitationem odit natus. Iure pariatur voluptatem deleniti officiis similique. A ratione nostrum quae sequi maxime animi repellat debitis exercitationem, nobis facilis nihil ipsam id, temporibus error cupiditate.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo asperiores, minima quod doloribus reprehenderit autem recusandae in id facilis exercitationem iure consequuntur eos, iusto animi minus quaerat veritatis repellat incidunt dicta. Voluptates deleniti possimus et repudiandae molestias aut atque veniam, sapiente provident? Aliquam expedita unde ducimus officia fugiat ratione odit hic mollitia quidem voluptas sit, ex modi adipisci libero necessitatibus eum? Tempore labore ex quis, omnis perferendis impedit cum iure, ea ullam, eligendi exercitationem odit natus. Iure pariatur voluptatem deleniti officiis similique. A ratione nostrum quae sequi maxime animi repellat debitis exercitationem, nobis facilis nihil ipsam id, temporibus error cupiditate.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo asperiores, minima quod doloribus reprehenderit autem recusandae in id facilis exercitationem iure consequuntur eos, iusto animi minus quaerat veritatis repellat incidunt dicta. Voluptates deleniti possimus et repudiandae molestias aut atque veniam, sapiente provident? Aliquam expedita unde ducimus officia fugiat ratione odit hic mollitia quidem voluptas sit, ex modi adipisci libero necessitatibus eum? Tempore labore ex quis, omnis perferendis impedit cum iure, ea ullam, eligendi exercitationem odit natus. Iure pariatur voluptatem deleniti officiis similique. A ratione nostrum quae sequi maxime animi repellat debitis exercitationem, nobis facilis nihil ipsam id, temporibus error cupiditate.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo asperiores, minima quod doloribus reprehenderit autem recusandae in id facilis exercitationem iure consequuntur eos, iusto animi minus quaerat veritatis repellat incidunt dicta. Voluptates deleniti possimus et repudiandae molestias aut atque veniam, sapiente provident? Aliquam expedita unde ducimus officia fugiat ratione odit hic mollitia quidem voluptas sit, ex modi adipisci libero necessitatibus eum? Tempore labore ex quis, omnis perferendis impedit cum iure, ea ullam, eligendi exercitationem odit natus. Iure pariatur voluptatem deleniti officiis similique. A ratione nostrum quae sequi maxime animi repellat debitis exercitationem, nobis facilis nihil ipsam id, temporibus error cupiditate.</p>
+</div>
+
+<footer>
+Made w/ turu lobe❤️ by<pre> </pre><a href="#">@hemsbansal</a>
+</footer>
+  <script>
+    document.querySelector('.ham-menu').addEventListener('click',()=>{
+      document.querySelector('ul').classList.toggle('active')
+    })
+  </script>
+</body>
+</html>
