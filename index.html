@@ -21,19 +21,19 @@
       font-family: roboto;
     }
     nav{
-      position: fixed;
+      position: sticky;
       top: 0;
       left: 0;
       user-select: none;
       width: 100%;
       height: 51px;
-      background-color: #333;
+      background-color: #000;
       color: white;
-      border-bottom: 1px solid #eee;
       padding: 0 1rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      box-shadow: 0px 0px 6px -0px black;
     }
     .logo{
       font-size: 2rem;
@@ -96,6 +96,43 @@
       min-height: calc(100vh - 92px);
     }
     
+    .main-section{
+      width: 100%;
+      min-height: 100vh;
+      padding: 2rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .main-section p{
+      font-size: 1.3rem;
+      font-weight: 100;
+    }
+    .main-section img{
+      max-width: 900px;
+      width: calc(100% - 2rem);
+    }
+    .explore{
+      background-color: #333;
+      color: white;
+      font-size: 1.1rem;
+      padding:1rem 2rem;
+      font-weight: 100;
+      border: none;
+      border-radius: .2rem;
+      cursor: pointer;
+      margin-bottom: 1rem;
+      transition: 0.2s;
+    }
+    .explore:hover{
+      background-color: #222;
+      color: cyan;
+      box-shadow: 0px 0px 4px 0px gray;
+    }
+
+    
     footer{
       width: 100%;
       height: 41px;
@@ -128,6 +165,11 @@
         max-width: 100%;
         flex-direction: column;
         display: none;
+        margin: 0;
+        transition: 0.3s;
+      }
+      .active{
+        display: flex;
       }
       nav ul li{
         padding: 0.5rem 2rem;
@@ -141,9 +183,7 @@
       text-shadow: 2px 2px 0px #ff0050, -2px -2px 0px #00f2ea;
         color: #000;
       }
-      .active{
-        display: flex;
-      }
+      
     }
   </style>
 </head>
@@ -170,25 +210,25 @@
   </nav>
 
 <div class="center">
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo asperiores, minima quod doloribus reprehenderit autem recusandae in id facilis exercitationem iure consequuntur eos, iusto animi minus quaerat veritatis repellat incidunt dicta. Voluptates deleniti possimus et repudiandae molestias aut atque veniam, sapiente provident? Aliquam expedita unde ducimus officia fugiat ratione odit hic mollitia quidem voluptas sit, ex modi adipisci libero necessitatibus eum? Tempore labore ex quis, omnis perferendis impedit cum iure, ea ullam, eligendi exercitationem odit natus. Iure pariatur voluptatem deleniti officiis similique. A ratione nostrum quae sequi maxime animi repellat debitis exercitationem, nobis facilis nihil ipsam id, temporibus error cupiditate.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo asperiores, minima quod doloribus reprehenderit autem recusandae in id facilis exercitationem iure consequuntur eos, iusto animi minus quaerat veritatis repellat incidunt dicta. Voluptates deleniti possimus et repudiandae molestias aut atque veniam, sapiente provident? Aliquam expedita unde ducimus officia fugiat ratione odit hic mollitia quidem voluptas sit, ex modi adipisci libero necessitatibus eum? Tempore labore ex quis, omnis perferendis impedit cum iure, ea ullam, eligendi exercitationem odit natus. Iure pariatur voluptatem deleniti officiis similique. A ratione nostrum quae sequi maxime animi repellat debitis exercitationem, nobis facilis nihil ipsam id, temporibus error cupiditate.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo asperiores, minima quod doloribus reprehenderit autem recusandae in id facilis exercitationem iure consequuntur eos, iusto animi minus quaerat veritatis repellat incidunt dicta. Voluptates deleniti possimus et repudiandae molestias aut atque veniam, sapiente provident? Aliquam expedita unde ducimus officia fugiat ratione odit hic mollitia quidem voluptas sit, ex modi adipisci libero necessitatibus eum? Tempore labore ex quis, omnis perferendis impedit cum iure, ea ullam, eligendi exercitationem odit natus. Iure pariatur voluptatem deleniti officiis similique. A ratione nostrum quae sequi maxime animi repellat debitis exercitationem, nobis facilis nihil ipsam id, temporibus error cupiditate.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo asperiores, minima quod doloribus reprehenderit autem recusandae in id facilis exercitationem iure consequuntur eos, iusto animi minus quaerat veritatis repellat incidunt dicta. Voluptates deleniti possimus et repudiandae molestias aut atque veniam, sapiente provident? Aliquam expedita unde ducimus officia fugiat ratione odit hic mollitia quidem voluptas sit, ex modi adipisci libero necessitatibus eum? Tempore labore ex quis, omnis perferendis impedit cum iure, ea ullam, eligendi exercitationem odit natus. Iure pariatur voluptatem deleniti officiis similique. A ratione nostrum quae sequi maxime animi repellat debitis exercitationem, nobis facilis nihil ipsam id, temporibus error cupiditate.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo asperiores, minima quod doloribus reprehenderit autem recusandae in id facilis exercitationem iure consequuntur eos, iusto animi minus quaerat veritatis repellat incidunt dicta. Voluptates deleniti possimus et repudiandae molestias aut atque veniam, sapiente provident? Aliquam expedita unde ducimus officia fugiat ratione odit hic mollitia quidem voluptas sit, ex modi adipisci libero necessitatibus eum? Tempore labore ex quis, omnis perferendis impedit cum iure, ea ullam, eligendi exercitationem odit natus. Iure pariatur voluptatem deleniti officiis similique. A ratione nostrum quae sequi maxime animi repellat debitis exercitationem, nobis facilis nihil ipsam id, temporibus error cupiditate.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo asperiores, minima quod doloribus reprehenderit autem recusandae in id facilis exercitationem iure consequuntur eos, iusto animi minus quaerat veritatis repellat incidunt dicta. Voluptates deleniti possimus et repudiandae molestias aut atque veniam, sapiente provident? Aliquam expedita unde ducimus officia fugiat ratione odit hic mollitia quidem voluptas sit, ex modi adipisci libero necessitatibus eum? Tempore labore ex quis, omnis perferendis impedit cum iure, ea ullam, eligendi exercitationem odit natus. Iure pariatur voluptatem deleniti officiis similique. A ratione nostrum quae sequi maxime animi repellat debitis exercitationem, nobis facilis nihil ipsam id, temporibus error cupiditate.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo asperiores, minima quod doloribus reprehenderit autem recusandae in id facilis exercitationem iure consequuntur eos, iusto animi minus quaerat veritatis repellat incidunt dicta. Voluptates deleniti possimus et repudiandae molestias aut atque veniam, sapiente provident? Aliquam expedita unde ducimus officia fugiat ratione odit hic mollitia quidem voluptas sit, ex modi adipisci libero necessitatibus eum? Tempore labore ex quis, omnis perferendis impedit cum iure, ea ullam, eligendi exercitationem odit natus. Iure pariatur voluptatem deleniti officiis similique. A ratione nostrum quae sequi maxime animi repellat debitis exercitationem, nobis facilis nihil ipsam id, temporibus error cupiditate.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo asperiores, minima quod doloribus reprehenderit autem recusandae in id facilis exercitationem iure consequuntur eos, iusto animi minus quaerat veritatis repellat incidunt dicta. Voluptates deleniti possimus et repudiandae molestias aut atque veniam, sapiente provident? Aliquam expedita unde ducimus officia fugiat ratione odit hic mollitia quidem voluptas sit, ex modi adipisci libero necessitatibus eum? Tempore labore ex quis, omnis perferendis impedit cum iure, ea ullam, eligendi exercitationem odit natus. Iure pariatur voluptatem deleniti officiis similique. A ratione nostrum quae sequi maxime animi repellat debitis exercitationem, nobis facilis nihil ipsam id, temporibus error cupiditate.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo asperiores, minima quod doloribus reprehenderit autem recusandae in id facilis exercitationem iure consequuntur eos, iusto animi minus quaerat veritatis repellat incidunt dicta. Voluptates deleniti possimus et repudiandae molestias aut atque veniam, sapiente provident? Aliquam expedita unde ducimus officia fugiat ratione odit hic mollitia quidem voluptas sit, ex modi adipisci libero necessitatibus eum? Tempore labore ex quis, omnis perferendis impedit cum iure, ea ullam, eligendi exercitationem odit natus. Iure pariatur voluptatem deleniti officiis similique. A ratione nostrum quae sequi maxime animi repellat debitis exercitationem, nobis facilis nihil ipsam id, temporibus error cupiditate.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo asperiores, minima quod doloribus reprehenderit autem recusandae in id facilis exercitationem iure consequuntur eos, iusto animi minus quaerat veritatis repellat incidunt dicta. Voluptates deleniti possimus et repudiandae molestias aut atque veniam, sapiente provident? Aliquam expedita unde ducimus officia fugiat ratione odit hic mollitia quidem voluptas sit, ex modi adipisci libero necessitatibus eum? Tempore labore ex quis, omnis perferendis impedit cum iure, ea ullam, eligendi exercitationem odit natus. Iure pariatur voluptatem deleniti officiis similique. A ratione nostrum quae sequi maxime animi repellat debitis exercitationem, nobis facilis nihil ipsam id, temporibus error cupiditate.</p>
+  <div class="main-section">
+    <h1>Learn to code like Godzilla</h1>
+    <p>Hands-on courses help you learn without the hassle of setup or videos    </p>
+    
+    <button class="explore">Explore all courses</button>
+  
+    <img src="learn-undraw.svg" alt="">
+  </div>
 </div>
 
 <footer>
 Made w/ turu lobe❤️ by<pre> </pre><a href="#">@hemsbansal</a>
 </footer>
+
   <script>
     document.querySelector('.ham-menu').addEventListener('click',()=>{
-      document.querySelector('ul').classList.toggle('active')
+      document.querySelector('ul').classList.toggle('active');
     })
   </script>
+
 </body>
 </html>
